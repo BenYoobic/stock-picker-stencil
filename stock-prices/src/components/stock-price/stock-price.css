@@ -1,0 +1,49 @@
+:host {
+    font-family: sans-serif;
+    border: 2px solid var(--color-primary, black);
+    margin: 2rem;
+    padding: 1rem;
+    display: block;
+    width: 20rem;
+    max-width: 100%;;
+    border-radius: 4px;
+}
+
+:host(.error) {
+    border-color: red;
+}
+
+form input {
+    font: inherit;
+    color: darkgray;
+    padding: 0.1rem 0.25rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+form input:focus,
+form button:focus {
+    outline: none;
+}
+
+form button {
+    font: inherit;
+    padding: 0.25rem 0.5rem;
+    border: 1px solid var(--color-primary, black);
+    background:  var(--color-primary, black);
+    color:  var(--color-primary-inverse, white);;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+form button:hover,
+form button:active {
+    background: var(--color-highlight, black);
+    border-color: var(--color-highlight, black);
+}
+
+form button[disabled] {
+    background-color: lightgray;
+    border-color: lightgray;
+    cursor: not-allowed;
+}
